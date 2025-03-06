@@ -1,0 +1,24 @@
+GET http://localhost:4200/notes
+
+###
+
+POST http://localhost:4200/add-note
+Content-Type: application/json
+
+{
+    "title":"c",
+    "content":"b"
+}
+
+###
+
+PUT http://localhost:4200/edit-note/1
+Content-Type: application/json
+
+{
+    "title":"no",
+    "content":"# no no no"
+}
+
+###
+DELETE http://localhost:4200/delete-note/3
